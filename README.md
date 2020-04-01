@@ -12,6 +12,8 @@ main是项目的入口。
 
 metrics是计算normalized gini系数的代码。
 
+数据下载可以去：https://github.com/princewen/tensorflow_practice/tree/master/recommendation/Basic-DeepFM-model/data
+
 
 # NEWS
 - A modified version of DeepFM is used to win the 4th Place for [Mercari Price Suggestion Challenge on Kaggle](https://www.kaggle.com/c/mercari-price-suggestion-challenge). See the slide [here](https://github.com/ChenglongChen/tensorflow-XNN/blob/master/doc/Mercari_Price_Suggesion_Competition_ChenglongChen_4th_Place.pdf) how we deal with fields containing sequences, how we incoporate various FM components into deep model.
