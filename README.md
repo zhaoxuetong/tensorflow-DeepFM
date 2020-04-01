@@ -1,6 +1,7 @@
 # tensorflow-DeepFM
 
 This project includes a Tensorflow implementation of DeepFM [1].
+
 config.py保存了我们模型的一些配置。
 
 DataReader对数据进行处理，得到模型可以使用的输入。
