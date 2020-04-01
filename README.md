@@ -1,6 +1,12 @@
 # tensorflow-DeepFM
 
 This project includes a Tensorflow implementation of DeepFM [1].
+config.py保存了我们模型的一些配置。
+DataReader对数据进行处理，得到模型可以使用的输入。
+DeepFM是我们构建的模型。
+main是项目的入口。
+metrics是计算normalized gini系数的代码。
+
 
 # NEWS
 - A modified version of DeepFM is used to win the 4th Place for [Mercari Price Suggestion Challenge on Kaggle](https://www.kaggle.com/c/mercari-price-suggestion-challenge). See the slide [here](https://github.com/ChenglongChen/tensorflow-XNN/blob/master/doc/Mercari_Price_Suggesion_Competition_ChenglongChen_4th_Place.pdf) how we deal with fields containing sequences, how we incoporate various FM components into deep model.
