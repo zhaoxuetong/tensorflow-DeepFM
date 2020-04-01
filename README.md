@@ -14,6 +14,15 @@ metrics是计算normalized gini系数的代码。
 
 数据下载可以去：https://github.com/princewen/tensorflow_practice/tree/master/recommendation/Basic-DeepFM-model/data
 
+在Pycharm中安装Yellowfin时一直报错"no such file or directory: '/temp/pip-build-jykvuD/YellowFin/README.md "，但是项目中需要"from yellowfin import YFOptimizer"，尝试了很多方法，也怀疑过是不是python版本的问题，最后在github上看到某个大神的解决方法，实验证明有效，在此处记录。
+
+首先，我在项目中使用的是python3.6.5，pip10.0.1，按照常理来说应该是跟版本号无关的。解决方法如下：
+
+（1）https://github.com/JianGoForIt/YellowFin下载代码，得到压缩包。
+
+（2）将下载的压缩包解压后，取出tuner_utils文件夹下的三个文件。
+
+（3）将这三个文件放入到与导入yellowfine的文件相同的目录下，此时不用安装yellowfine就可以直接使用。DeepFM中调用了yellowfin的YFOptimizer方法。
 
 # NEWS
 - A modified version of DeepFM is used to win the 4th Place for [Mercari Price Suggestion Challenge on Kaggle](https://www.kaggle.com/c/mercari-price-suggestion-challenge). See the slide [here](https://github.com/ChenglongChen/tensorflow-XNN/blob/master/doc/Mercari_Price_Suggesion_Competition_ChenglongChen_4th_Place.pdf) how we deal with fields containing sequences, how we incoporate various FM components into deep model.
