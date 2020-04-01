@@ -18,7 +18,7 @@ metrics是计算normalized gini系数的代码。
 
 首先，我在项目中使用的是python3.6.5，pip10.0.1，按照常理来说应该是跟版本号无关的。解决方法如下：
 
-（1）https://github.com/JianGoForIt/YellowFin下载代码，得到压缩包。
+（1）https://github.com/JianGoForIt/YellowFin 下载代码，得到压缩包。
 
 （2）将下载的压缩包解压后，取出tuner_utils文件夹下的三个文件。
 
