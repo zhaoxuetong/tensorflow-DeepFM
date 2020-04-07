@@ -2,6 +2,8 @@
 
 This project includes a Tensorflow implementation of DeepFM [1].
 
+这里的deepFM,考虑交互特征，和生物学内涵还不太一样，这里是分field，每个field里面可能有2-多个类别，然后再onehot得到feature-size；但是我们的问题是，DNA甲基化首先是连续变量，理想的是把所有的DNA甲基化归为一个类里面，其余的临床特征归为一个或者多个类，要根据具体的临床特征来分析了，但是如果使用deepFM，对于离散特征，是单独的一个field的，对于多分类变量才可以一个field做onehot得到几个feature-size，或者不能实现将DNA甲基化分到一个field的功能。
+
 config.py保存了我们模型的一些配置。
 
 DataReader对数据进行处理，得到模型可以使用的输入。
